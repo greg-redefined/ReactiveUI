@@ -4,7 +4,9 @@
     <AssemblyName>ReactiveUI.Events.XamForms</AssemblyName>
     <RootNamespace>ReactiveUI.Events</RootNamespace>
     <Description>Provides Observable-based events API for Xamarin Forms UI controls/eventhandlers. The contents of this package is automatically generated, please target pull-requests to the code generator.</Description>
-    <PackageId>ReactiveUI.Events.XamForms</PackageId>
+    <PackageId>ReactiveUI.Events.XamForms-StrongName</PackageId>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>E:\DEV\redefined\repos\ReactiveUI\src\ReactiveUI.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -17,6 +19,10 @@
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="2.5.1.444934" />
     <Compile Include="Events_XAMFORMS.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\ReactiveUI.snk" Link="ReactiveUI.snk" />
   </ItemGroup>
 
   <Import Project="$(MSBuildSDKExtrasTargets)" Condition="Exists('$(MSBuildSDKExtrasTargets)')" />

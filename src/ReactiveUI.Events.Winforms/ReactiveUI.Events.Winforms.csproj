@@ -4,7 +4,9 @@
     <AssemblyName>ReactiveUI.Events.Winforms</AssemblyName>
     <RootNamespace>ReactiveUI.Events</RootNamespace>
     <Description>Provides Observable-based events API for Winforms UI controls/eventhandlers. The contents of this package is automatically generated, please target pull-requests to the code generator.</Description>
-    <PackageId>ReactiveUI.Events.Winforms</PackageId>
+    <PackageId>ReactiveUI.Events.Winforms-StrongName</PackageId>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>E:\DEV\redefined\repos\ReactiveUI\src\ReactiveUI.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>  
 
   <ItemGroup>
@@ -16,6 +18,7 @@
 
   <ItemGroup>
     <Compile Include="Events_Winforms.cs" />
+    <None Include="..\ReactiveUI.snk" Link="ReactiveUI.snk" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.DirectoryServices" />

@@ -4,13 +4,16 @@
     <AssemblyName>ReactiveUI.Events</AssemblyName>
     <RootNamespace>ReactiveUI.Events</RootNamespace>
     <Description>Provides Observable-based events API for common UI controls/eventhandlers. The contents of this package is automatically generated, please target pull-requests to the code generator.</Description>
-    <PackageId>ReactiveUI.Events</PackageId>
+    <PackageId>ReactiveUI.Events-StrongName</PackageId>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>E:\DEV\redefined\repos\ReactiveUI\src\ReactiveUI.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
 
   <ItemGroup>
     <Compile Remove="*.cs" />
     <None Include="*.cs" />
     <Compile Include="SingleAwaitSubject.cs" />
+    <None Include="..\ReactiveUI.snk" Link="ReactiveUI.snk" />
     <PackageReference Include="System.Reactive" Version="3.1.1" />
   </ItemGroup>
 
