@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0</TargetFrameworks>
     <Description>Xamarin Forms specific extensions to ReactiveUI</Description>
-    <PackageId>ReactiveUI.XamForms</PackageId>
+    <PackageId>ReactiveUI.XamForms-StrongName</PackageId>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>E:\DEV\redefined\repos\ReactiveUI\src\ReactiveUI.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>

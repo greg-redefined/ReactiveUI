@@ -8,7 +8,7 @@
   <PropertyGroup>
     <TargetFramework>net461</TargetFramework>        
     <Description>WPF specific extensions to ReactiveUI</Description>
-    <PackageId>ReactiveUI.WPF</PackageId>
+    <PackageId>ReactiveUI.WPF-StrongName</PackageId>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>E:\DEV\redefined\repos\ReactiveUI\src\ReactiveUI.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>

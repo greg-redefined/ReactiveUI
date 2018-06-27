@@ -5,7 +5,7 @@
     <AssemblyName>ReactiveUI.Winforms</AssemblyName>
     <RootNamespace>ReactiveUI.Winforms</RootNamespace>
     <Description>Windows Forms specific extensions to ReactiveUI</Description>
-    <PackageId>ReactiveUI.WinForms</PackageId>
+    <PackageId>ReactiveUI.WinForms-StrongName</PackageId>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>E:\DEV\redefined\repos\ReactiveUI\src\ReactiveUI.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>

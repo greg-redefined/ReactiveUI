@@ -6,7 +6,7 @@
     <Description>Fody extension to generate RaisePropertyChange notifications for properties and ObservableAsPropertyHelper properties.</Description>
 
     <!-- Override FodyPackaging since project is named differently than expected -->
-    <PackageId>ReactiveUI.Fody</PackageId>
+    <PackageId>ReactiveUI.Fody-StrongName</PackageId>
     <WeaverDirPath>..\$(PackageId)\bin\$(Configuration)\</WeaverDirPath>
     <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
     <SignAssembly>true</SignAssembly>

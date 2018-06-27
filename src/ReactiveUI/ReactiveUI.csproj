@@ -4,7 +4,7 @@
     <AssemblyName>ReactiveUI</AssemblyName>
     <RootNamespace>ReactiveUI</RootNamespace>
     <Description>A MVVM framework that integrates with the Reactive Extensions for .NET to create elegant, testable User Interfaces that run on any mobile or desktop platform. Supports Xamarin.iOS, Xamarin.Android, Xamarin.Mac, Xamarin Forms, WPF, Windows Forms, Windows Phone 8.1, Windows Store and Universal Windows Platform (UWP).</Description>
-    <PackageId>ReactiveUI</PackageId>
+    <PackageId>ReactiveUI-StrongName</PackageId>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>E:\DEV\redefined\repos\ReactiveUI\src\ReactiveUI.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
@@ -13,8 +13,8 @@
     <Compile Remove="Platforms\**\*.cs" />
     <None Include="Platforms\**\*.cs" />
     <None Include="..\ReactiveUI.snk" Link="ReactiveUI.snk" />
+    <PackageReference Include="Splat-StrongName" Version="1.0.0" />
     <PackageReference Include="System.Reactive" Version="3.1.1" />
-    <PackageReference Include="Splat" Version="4.0.0" />
   </ItemGroup>
 
   <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard2.0' ">

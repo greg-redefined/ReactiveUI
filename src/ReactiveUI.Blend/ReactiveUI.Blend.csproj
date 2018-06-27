@@ -5,7 +5,7 @@
     <AssemblyName>ReactiveUI.Blend</AssemblyName>
     <RootNamespace>ReactiveUI.Blend</RootNamespace>
     <Description>Blend behaviors for ReactiveUI</Description>
-    <PackageId>ReactiveUI.Blend</PackageId>
+    <PackageId>ReactiveUI.Blend-StrongName</PackageId>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>E:\DEV\redefined\repos\ReactiveUI\src\ReactiveUI.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
@@ -14,8 +14,8 @@
     <Compile Remove="Platforms\**\*.cs" />
     <None Include="Platforms\**\*.cs" />
     <None Include="..\ReactiveUI.snk" Link="ReactiveUI.snk" />
+    <PackageReference Include="Splat-StrongName" Version="1.0.0" />
     <PackageReference Include="System.Reactive" Version="3.1.1" />
-    <PackageReference Include="Splat" Version="4.0.0" />
   </ItemGroup>
 
   <ItemGroup Condition=" '$(TargetFramework)' == 'net461' ">
