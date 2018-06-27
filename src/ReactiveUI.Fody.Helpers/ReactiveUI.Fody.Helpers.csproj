@@ -9,7 +9,12 @@
     <PackageId>ReactiveUI.Fody</PackageId>
     <WeaverDirPath>..\$(PackageId)\bin\$(Configuration)\</WeaverDirPath>
     <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>E:\DEV\redefined\repos\ReactiveUI\src\ReactiveUI.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
+  <ItemGroup>
+    <None Include="..\ReactiveUI.snk" Link="ReactiveUI.snk" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Fody" Version="3.0.3" PrivateAssets="None" />

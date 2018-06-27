@@ -6,7 +6,13 @@
     <RootNamespace>ReactiveUI.Testing</RootNamespace>
     <Description>A library to aid in writing unit tests for ReactiveUI projects</Description>
     <PackageId>ReactiveUI.Testing</PackageId>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>E:\DEV\redefined\repos\ReactiveUI\src\ReactiveUI.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\ReactiveUI.snk" Link="ReactiveUI.snk" />
+  </ItemGroup>
   
   <ItemGroup>
     <PackageReference Include="Microsoft.Reactive.Testing" Version="3.1.1" />

@@ -6,7 +6,13 @@
     <RootNamespace>ReactiveUI.AndroidSupport</RootNamespace>
     <Description>ReactiveUI extensions for the Android Support Library</Description>
     <PackageId>ReactiveUI.AndroidSupport</PackageId>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>E:\DEV\redefined\repos\ReactiveUI\src\ReactiveUI.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\ReactiveUI.snk" Link="ReactiveUI.snk" />
+  </ItemGroup>
   
   <ItemGroup>
     <PackageReference Include="Xamarin.Android.Support.Animated.Vector.Drawable" Version="26.1.0.1" />

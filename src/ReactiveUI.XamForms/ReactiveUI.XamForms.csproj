@@ -4,7 +4,13 @@
     <TargetFrameworks>netstandard2.0</TargetFrameworks>
     <Description>Xamarin Forms specific extensions to ReactiveUI</Description>
     <PackageId>ReactiveUI.XamForms</PackageId>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>E:\DEV\redefined\repos\ReactiveUI\src\ReactiveUI.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\ReactiveUI.snk" Link="ReactiveUI.snk" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="2.5.1.444934" />

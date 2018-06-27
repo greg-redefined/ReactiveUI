@@ -5,7 +5,12 @@
     <RootNamespace>ReactiveUI.Fody</RootNamespace>
     <Description>Fody Weavers for ReactiveUI.Fody.</Description>
     <IsPackable>False</IsPackable>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>E:\DEV\redefined\repos\ReactiveUI\src\ReactiveUI.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
+  <ItemGroup>
+    <None Include="..\ReactiveUI.snk" Link="ReactiveUI.snk" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="FodyHelpers" Version="3.0.3" />

@@ -2,6 +2,8 @@
   <PropertyGroup>    
     <TargetFrameworks>net461</TargetFrameworks>
     <IsPackable>false</IsPackable>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>E:\DEV\redefined\repos\ReactiveUI\src\ReactiveUI.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -35,6 +37,10 @@
 
   <ItemGroup>
     <WeaverFiles Include="..\ReactiveUI.Fody\bin\$(Configuration)\$(TargetFramework)\ReactiveUI.Fody.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\ReactiveUI.snk" Link="ReactiveUI.snk" />
   </ItemGroup>
   
   <Target Name="CopyWeavers" BeforeTargets="BeforeBuild">
